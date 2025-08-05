@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
+import Footer from './components/Footer';
 
 function App() {
   const [todos, setTodos] = useState([]); // Initial state is an empty array
@@ -47,6 +48,7 @@ function App() {
           editTodo={editTodo} 
         />
       </div>
+      <Footer />
     </div>
   );
 }
